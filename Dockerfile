@@ -1,7 +1,4 @@
 FROM openjdk:7
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN javac Main.java
 
 RUN  apt-get update \
   && apt-get install -y wget
